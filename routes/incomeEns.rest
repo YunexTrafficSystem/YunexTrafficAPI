@@ -1,0 +1,37 @@
+GET http://localhost:4000/IncomeEns/all
+###
+GET http://localhost:4000/IncomeEns/
+###
+POST http://localhost:4000/IncomeEns
+Content-Type: application/json
+
+{
+    "consecutivo" : "a",
+    "fechaInicio" : "10-05-2021",
+    "grafo" : "i ",
+    "semaforo" : "o",
+    "bandejas" : "u",
+    "controlador" : "z",
+    "sxProteccion" : "x",
+    "cantidad" : "",
+    "sinIniciar" : "",
+    "enCurso" : "x",
+    "finalizado" : "",
+    "contrato" : "c",
+    "cliente" : "v",
+    "nombreRemitente" : "b",
+    "fechaEstimadaFinalizacion" : "05-05-2023",
+    "fechaRealEntrega" : "02-05-2021",
+    "cumplimientoFechaEntrega" : "va",
+    "recibido" : "vd",
+    "responsableEnsamble" : "vc",
+    "responsableServicio" : "vcd"
+}
+###
+DELETE  http://localhost:4000/IncomeEns/delete/6488ea12f4f5e79c5ee934f4
+###
+PUT     http://localhost:4000/IncomeEns/update/645911053521fbebfe96d83c
+Content-Type: application/json
+
+    {"estado":"camilo"}
+###

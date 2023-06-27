@@ -1,0 +1,33 @@
+GET http://localhost:4000/SignUp/all
+###
+GET http://localhost:4000/SignUp/
+###
+POST http://localhost:4000/InSignUp
+Content-Type: application/json
+
+{
+    "tipoSolicitud" : "a",
+    "consecutivo" : "e",
+    "grafo" : "i ",
+    "cantidad" : "o",
+    "nombreContrato" : "u",
+    "nombreRemitente" : "z",
+    "nombreDestinario" : "x",
+    "fechaDeRecibido" : "02-05-2021",
+    "fechaEstimadaDevolucion" : "10-05-2021",
+    "estado" : "x",
+    "fechaDeFinalizacion" : "05-05-2023",
+    "fechaRealDeEntrega" : "05-05-2069",
+    "cumplioConLaFechaEstablecida" : "c",
+    "responsableLaboratorio" : "v",
+    "responsableServicios" : "b",
+    "satifaccion" : "m"
+}
+###
+DELETE  http://localhost:4000/SignUp/delete/6463fd76568cbc650d895154
+###
+PUT     http://localhost:4000/SignUp/update/6462515029773f59de7a8cfc
+Content-Type: application/json
+
+    {"estado":"camilo"}
+###

@@ -1,0 +1,42 @@
+GET http://localhost:4000/IncomeLab/all
+###
+POST http://localhost:4000/IncomeLab/one
+Content-Type: application/json
+
+    {"ticket" : "m-666"}
+###
+POST http://localhost:4000/IncomeLab
+Content-Type: application/json
+
+{
+    "ticket" : "m-666",
+    "fechaDeIngreso" : " 02-05-2022",
+    "modulo" : "CPU ",
+    "equipo" : "ST950",
+    "serial" : "9610674",
+    "cantidad" : "1",
+    "actividadARealizar" : "cacsa",
+    "ciudad" : "Villa del Rosario",
+    "observaciones" : "NO",
+    "contratoNo" : "#1",
+    "cliente" : "Departamento Administrativo de Tránsito y Transporte de Villa del Rosario",
+    "nombreRemitente" : "Luis Machuca",
+    "ingresaPorGarantiaDelServicio" : "No",
+    "fechaEsperadaDeSalida" : "13042021",
+    "responsableCentroDeReparaciones" : "Ing. Daniel Morales B.",
+    "responsableServicios" : "Ing. Cesar Ospina",
+    "fechaRealDeEntrega" : "13042021",
+    "cumplimientofechaEntrega" : "SI",
+    "tiempoEstimadoDeReparacion" : "0",
+    "tiempoRealActividad" : "nn",
+    "cumplimientoTiempoDeReparacion" : "SI",
+    "año" : "2021"
+}
+###
+DELETE  http://localhost:4000/IncomeLab/delete/64762e8cc2ca85918489698e
+###
+PUT     http://localhost:4000/IncomeLab/update/64762e8cc2ca85918489699a
+Content-Type: application/json
+
+    {"ciudad" : "kik5"}
+###
